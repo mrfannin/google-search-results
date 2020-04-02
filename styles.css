@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -91,6 +93,7 @@ nav {
 .search-options li {
     font-size: 14px;
     width: fit-content;
+    padding: 0 10px;
     height: 100%;
 
 }
@@ -98,16 +101,20 @@ nav {
 .nav-options ul li a {
     text-decoration: none;
     color: gray;
-
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: red;
-
-    
 }
 
-.nav-options ul li img {
+.search-options li a {
+    width: 110%;
+    display: flex;
+}
+
+.search-options li a p {
+    padding-left: 5px;
+    font-size: 12px;
+    padding-top: 2px;
+}
+
+.search-options li img {
     width: 17px;
     vertical-align: middle;
 
@@ -119,4 +126,15 @@ nav {
 
 .selected-option a {
     color: blue;
+}
+
+.search-settings  {
+    width: 100px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-settings li {
+    font-size: 13px;
 }
