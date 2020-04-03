@@ -15,8 +15,10 @@ header {
 }
 
 #logo {
+    position: fixed;
     height: 30px;
-    margin-left: 25px;
+    left: 25px;
+    top: 30px;
 }
 
 #search-image {
@@ -27,7 +29,7 @@ header {
 }
 
 #search-form {
-    margin-left: 50px;
+    margin-left: 165px;
 }
 
 #search-text {
@@ -66,14 +68,14 @@ header {
 nav {
     width: 100%;
     height: 60px;
-    border-bottom: lightgray 1px solid;
+    border-bottom: #ebebeb 1px solid;
 }
 
 .nav-options {
     display: flex;
     width: 650px;
 
-    padding-left: 170px;
+    padding-left: 165px;
     padding-top: 30px;
     justify-content: space-between;
     height: 27px;
@@ -100,7 +102,7 @@ nav {
 
 .nav-options ul li a {
     text-decoration: none;
-    color: gray;
+    color: #5f6368;
 }
 
 .search-options li a {
@@ -121,11 +123,11 @@ nav {
 }
 
 .selected-option {
-    border-bottom: 3px blue solid;
+    border-bottom: 3px #1A73E8 solid;
 }
 
-.selected-option a {
-    color: blue;
+.selected-option a p {
+    color: #1A73E8;
 }
 
 .search-settings  {
@@ -137,4 +139,60 @@ nav {
 
 .search-settings li {
     font-size: 13px;
+}
+
+main {
+    margin-left: 175px;
+    margin-top: 15px;
+    width: 650px;
+}
+
+.search-result {
+    margin-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.num-results {
+    color: #70757a;
+    font-size: 15px;
+
+}
+
+.url-slug {
+    display: flex;
+}
+
+.url-slug a {
+    text-decoration: none;
+    color: #3C4043;
+    font-size: 14px;
+}
+
+.url-slug img {
+    width: 13px;
+    height: 13px;
+    padding-left: 3px;
+}
+
+.page-title {
+    text-decoration: none;
+    padding-top: 7px;
+    font-size: 20px;
+}
+
+.page-title:hover {
+    text-decoration: underline;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 6px;
+    color: #3C4043;
+}
+
+.pub-date {
+    color: #70757a;
 }
